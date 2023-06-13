@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+
+
+
+import sys
+def print_args(script, "args"):
+  print('script:{}'.format(script))
+  for arg in args:
+    print('Arg:{}'.format(arg))
+    
+if __name__ == '__main__':
+  script = sys.arg[0]
+  args = sys.arg[1:]
+  print_args(script, *args)
